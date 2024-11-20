@@ -67,7 +67,6 @@ aside .profile-img {
   width: 50%;
 }
 
-
 .github-icon {
   color: white;
 }
@@ -154,9 +153,7 @@ h2 {
   font-weight: 600;
 }
 
-
 .btn {
-  
   border-radius: 20px;
   font-family: Roboto-bold;
   font-weight: 300;
@@ -171,7 +168,6 @@ h2 {
 .btn :active {
   scale: 0.9;
 }
-
 
 @media (max-width: 576px) {
   .button-contact {
