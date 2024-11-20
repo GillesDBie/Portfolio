@@ -46,7 +46,8 @@ body {
 }
 
 .index-main h1 {
-  font-family: Poppins;
+  font-family: Roboto-bold;
+  font-weight:600;
   letter-spacing: 2px;
   text-decoration: underline;
   color: rgb(13, 110, 253, 1);
@@ -96,7 +97,6 @@ aside .profile-img {
 .card {
   background-color: var(--secondary-color);
   transition: transform 0.3s ease-in-out;
-  font-family: Verdana;
 }
 
 .card:hover {
@@ -153,19 +153,18 @@ h2 {
   font-weight: 600;
 }
 
-.btn {
+.button-contact {
   border-radius: 20px;
   font-family: Roboto-bold;
-  font-weight: 300;
+  font-weight: 600;
 }
 
-.btn:hover {
-  color: var(--main-color);
+.button-contact:hover {
   scale: 1.05;
-  border: 2px solid var(--main-color);
+  border: 2px solid rgb(13, 110, 253, 1);
 }
 
-.btn :active {
+.button-contact :active {
   scale: 0.9;
 }
 
