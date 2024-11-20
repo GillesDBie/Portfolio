@@ -10,7 +10,7 @@ body {
 }
 
 .active {
-  color: white !important;
+  background-color: rgb(13, 110, 253, 1) !important;
 }
 
 .background-main {
@@ -25,15 +25,13 @@ body {
 }
 
 .navbar-nav .nav-knop {
-  margin-left: 5px;
-  margin-right: 5px;
+  border-radius: 100%;
 }
 
 .navbar-nav .nav-knop:hover {
   color: rgb(13, 110, 253, 1) !important;
   transform: scale(1.05);
   border: 0.5px solid rgb(13, 110, 253, 1);
-  border-radius: 5px;
   box-shadow: 0 0 2px rgb(13, 110, 253, 1), 0 0 2px rgb(13, 110, 253, 1),
     0 0 2px rgb(13, 110, 253, 1);
   transition: all 0.3s ease;
@@ -42,30 +40,13 @@ body {
 .navbar-nav .nav-knop:active {
   transform: scale(1);
 }
-
-.navbar .dropdown-menu {
-  background-color: var(--main-color);
-}
-
-.navbar .dropdown-item {
-  color: white;
-}
-
-.navbar .dropdown-item:hover {
-  background-color: var(--main-color);
-  color: white;
-  border: 1px solid rgb(13, 110, 253, 1) !important;
-  box-shadow: 0 0 4px rgb(13, 110, 253, 1), 0 0 4px rgb(13, 110, 253, 1),
-    0 0 4px rgb(13, 110, 253, 1);
-}
-
 /* INDEX */
 .index-main {
   background-color: var(--secondary-color);
 }
 
 .index-main h1 {
-  font-family: Montserrat;
+  font-family: Poppins;
   letter-spacing: 2px;
   text-decoration: underline;
   color: rgb(13, 110, 253, 1);
@@ -85,6 +66,7 @@ aside .profile-img {
   border-radius: 50%;
   width: 50%;
 }
+
 
 .github-icon {
   color: white;
@@ -160,13 +142,24 @@ aside .profile-img {
 }
 
 /* CONTACT */
-.contact-form {
-  background-color: var(--secondary-color);
+
+h2 {
+  font-family: Roboto-bold;
+  font-weight: 900;
+}
+.form-control {
+  border: none;
+  border-radius: 20px;
+  font-family: Roboto-bold;
+  font-weight: 600;
 }
 
+
 .btn {
-  border: 2px solid var(--main-color);
-  border-radius: 50px;
+  
+  border-radius: 20px;
+  font-family: Roboto-bold;
+  font-weight: 300;
 }
 
 .btn:hover {
@@ -178,6 +171,7 @@ aside .profile-img {
 .btn :active {
   scale: 0.9;
 }
+
 
 @media (max-width: 576px) {
   .button-contact {

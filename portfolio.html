@@ -33,8 +33,11 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand navbar-dark border-bottom">
+    <!-- nav -->
+    <nav
+      class="navbar navbar-expand navbar-dark"
+      style="height: 100px"
+    >
       <button
         class="navbar-toggler"
         type="button"
@@ -47,38 +50,68 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-knop nav-link text-light" href="index.html">Home</a>
-          </li>
-          <li class="nav-item dropdown">
+      <section class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto d-flex justify-content-between w-25">
+          <li class="nav-item mr-3">
             <a
-              class="nav-knop nav-link dropdown-toggle text-light"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              style="text-decoration: underline"
+              class="nav-knop nav-link text-light d-flex bg-dark"
+              href="index.html"
             >
-              Portfolio
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                class="bi bi-house-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"
+                />
+                <path
+                  d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"
+                />
+              </svg>
             </a>
-            <section class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="portfolio.html">Alle projecten</a>
-              <a class="dropdown-item" href="project1.html">Project 1</a>
-              <a class="dropdown-item" href="#"> Project 2</a>
-              <a class="dropdown-item" href="#">Project 3 </a>
-              <a class="dropdown-item" href="#">Project 4 </a>
-              <a class="dropdown-item" href="#">Project 5 </a>
-              <a class="dropdown-item" href="#">Project 6 </a>
-            </section>
           </li>
           <li class="nav-item">
-            <a class="nav-knop nav-link text-light" href="contact.html"
-              >Contact</a
+            <a
+              class="nav-knop nav-link text-light d-flex bg-dark active"
+              href="portfolio.html"
             >
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            class="bi bi-collection"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5z"
+            />
+          </svg>
+            </a>
+          </li>
+
+          <li class="nav-item ml-3">
+            <a
+              class="nav-knop nav-link text-light d-flex bg-dark"
+              style="text-decoration: underline"
+              href="contact.html"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                class="bi bi-envelope-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"
+                />
+              </svg>
+            </a>
           </li>
         </ul>
         <a class="navbar-brand" href="https://www.ap.be/">
@@ -88,7 +121,7 @@
             alt=""
             width="100"
         /></a>
-      </div>
+      </section>
     </nav>
     <!-- main -->
     <main class="container mt-5">
@@ -111,7 +144,6 @@
                 <p class="skill-button btn btn-primary mt-2">HTML</p>
                 <p class="skill-button btn btn-primary mt-2">CSS</p>
                 <p class="skill-button btn btn-primary mt-2">JS</p>
-
               </section>
             </article>
           </a>
@@ -152,7 +184,6 @@
                 <p class="card-text">vaardigheden:</p>
                 <p class="skill-button btn btn-primary mt-2">HTML</p>
               </section>
-          
             </article>
           </a>
         </section>
