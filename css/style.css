@@ -1,0 +1,199 @@
+:root {
+  --main-color: rgb(34, 40, 49);
+  --secondary-color: rgb(49, 54, 63);
+  --text-color: rgb(16.08% 19.61% 25.49%);
+  --shadow: 6px 6px 6px 1px rgba(0, 0, 0, 0.75);
+}
+
+body {
+  background-color: var(--main-color);
+}
+
+.active {
+  color: white !important;
+}
+
+.background-main {
+  background-color: var(--main-color) !important;
+}
+
+.navbar {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: var(--main-color);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-knop {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.navbar-nav .nav-knop:hover {
+  color: rgb(13, 110, 253, 1) !important;
+  transform: scale(1.05);
+  border: 0.5px solid rgb(13, 110, 253, 1);
+  border-radius: 5px;
+  box-shadow: 0 0 2px rgb(13, 110, 253, 1), 0 0 2px rgb(13, 110, 253, 1),
+    0 0 2px rgb(13, 110, 253, 1);
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-knop:active {
+  transform: scale(1);
+}
+
+.navbar .dropdown-menu {
+  background-color: var(--main-color);
+}
+
+.navbar .dropdown-item {
+  color: white;
+}
+
+.navbar .dropdown-item:hover {
+  background-color: var(--main-color);
+  color: white;
+  border: 1px solid rgb(13, 110, 253, 1) !important;
+  box-shadow: 0 0 4px rgb(13, 110, 253, 1), 0 0 4px rgb(13, 110, 253, 1),
+    0 0 4px rgb(13, 110, 253, 1);
+}
+
+/* INDEX */
+.index-main {
+  background-color: var(--secondary-color);
+}
+
+.index-main h1 {
+  font-family: Montserrat;
+  letter-spacing: 2px;
+  text-decoration: underline;
+  color: rgb(13, 110, 253, 1);
+}
+
+aside {
+  background-color: var(--secondary-color);
+}
+
+aside p {
+  text-align: start;
+  font-size: larger;
+}
+
+aside .profile-img {
+  background-color: transparent;
+  border-radius: 50%;
+  width: 50%;
+}
+
+.github-icon {
+  color: white;
+}
+
+.github-icon:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.linkedin-icon {
+  color: white;
+}
+
+.linkedin-icon:hover {
+  color: white;
+  text-decoration: none;
+}
+.gmail-icon {
+  color: white;
+}
+
+.gmail-icon:hover {
+  color: white;
+  text-decoration: none;
+}
+/* PROJECTS */
+.card {
+  background-color: var(--secondary-color);
+  transition: transform 0.3s ease-in-out;
+  font-family: Verdana;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card:active {
+  transform: scale(1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card-link {
+  text-decoration: none !important;
+}
+
+.skill-button {
+  pointer-events: none;
+  font-size: small;
+}
+
+/* PROJECT DETAIL PAGE */
+.project-container {
+  background-color: var(--main-color);
+  color: var(--text-color);
+}
+
+.project-top {
+  background-color: var(--secondary-color);
+}
+
+.project-body {
+  background-color: var(--secondary-color);
+}
+
+.project-details-text {
+  color: var(--text-color);
+}
+
+/* CONTACT */
+.contact-form {
+  background-color: var(--secondary-color);
+}
+
+.btn {
+  border: 2px solid var(--main-color);
+  border-radius: 50px;
+}
+
+.btn:hover {
+  color: var(--main-color);
+  scale: 1.05;
+  border: 2px solid var(--main-color);
+}
+
+.btn :active {
+  scale: 0.9;
+}
+
+@media (max-width: 576px) {
+  .button-contact {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 380px) {
+  .navbar .logo-proj {
+    width: 75px !important;
+  }
+}
+
+@media (max-width: 321px) {
+  .navbar {
+    font-size: small;
+  }
+}
