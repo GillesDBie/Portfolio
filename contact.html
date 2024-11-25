@@ -34,19 +34,7 @@
   </head>
   <body>
     <!-- nav -->
-    <nav class="navbar navbar-expand navbar-dark" style="height: 100px">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
+    <nav class="navbar navbar-expand navbar-dark mb-3 mt-3">
       <section class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto d-flex justify-content-between w-25">
           <li class="nav-item mr-3">
@@ -93,7 +81,7 @@
 
           <li class="nav-item ml-3">
             <a
-              class="nav-knop nav-link text-light d-flex bg-dark active"
+              class="nav-knop nav-link text-light d-flex active bg-dark"
               style="text-decoration: underline"
               href="contact.html"
               ><svg
@@ -111,90 +99,129 @@
             </a>
           </li>
         </ul>
-        <a class="navbar-brand" href="https://www.ap.be/">
+        <a class="navbar-brand ml-5" href="https://www.ap.be/">
           <img
             class="logo-proj"
-            src="assets/images/AP_logo_staand_ENG_wit.png"
+            src="assets/images/logo/AP_logo.png"
             alt=""
-            width="100"
+            width="200"
         /></a>
       </section>
     </nav>
     <!-- main -->
-    <main class="mt-2 md-5">
+    <main class="md-5">
       <section class="container">
-        <section class="row justify-content-md-center">
-          <article class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
-            <h2 class="display-5 text-center text-light mt-2">CONTACT</h2>
-          </article>
-        </section>
-      </section>
-
-      <section class="container text-light">
-        <section class="row justify-content-lg-center">
-          <article class="col-12 col-lg-9">
-            <form class="contact-form" action="">
-              <section class="row p-xl-4">
-                <article class="field col-12">
-                  <label for="naam" class="form-label"> </label>
-                  <input
-                    type="text"
-                    class="form-control bg-dark"
-                    id="naam"
-                    name="naam"
-                    placeholder="Geef hier je naam..."
-                    required
-                  />
-                </article>
-                <article class="field col-12">
-                  <label for="email" class="form-label"></label>
-                  <div class="input-group">
+        <section class="row justify-content-md-center"></section>
+        <h1 class="d-flex text-light ml-3">CONTACT</h1>
+        <section class="container text-light d-flex">
+          <section class="row">
+            <article class="col-12 col-lg-9">
+              <form class="contact-form" action="">
+                <section class="row">
+                  <article class="field col-12">
+                    <label for="naam" class="form-label"> </label>
                     <input
-                      type="email"
-                      class="form-control bg-dark"
-                      id="email"
-                      name="email"
-                      placeholder="Geef hier uw e-mail in..."
+                      type="text"
+                      class="form-control bg-dark text-light"
+                      id="naam"
+                      name="naam"
+                      placeholder="GEEF HIER JE NAAM"
                       required
                     />
-                  </div>
-                </article>
-                <article class="field col-12">
-                  <label for="phone" class="form-label"> </label>
-                  <div class="input-group">
-                    <input
-                      type="tel"
-                      class="form-control bg-dark"
-                      id="telefoonnr"
-                      name="telefoonnr"
-                      placeholder="Geef hier u nummer..."
-                    />
-                  </div>
-                </article>
-                <article class="field col-12">
-                  <label for="message" class="form-label"> </label>
-                  <textarea
-                    class="form-control bg-dark"
-                    id="bericht"
-                    name="bericht"
-                    rows="3"
-                    placeholder="Geef hier u bericht in..."
-                    required
-                  ></textarea>
-                </article>
-                <article class="col-12">
-                  <div class="">
-                    <button
-                      class="btn mt-3 btn-dark btn-lg button-contact"
-                      type="submit"
-                    >
-                      SUBMIT
-                    </button>
-                  </div>
-                </article>
-              </section>
-            </form>
-          </article>
+                  </article>
+                  <article class="field col-12">
+                    <label for="email" class="form-label"></label>
+                    <div class="input-group">
+                      <input
+                        type="email"
+                        class="form-control bg-dark text-light"
+                        id="email"
+                        name="email"
+                        placeholder="GEEF HIER JE E-MAIL"
+                        required
+                      />
+                    </div>
+                  </article>
+                  <article class="field col-12">
+                    <label for="phone" class="form-label"> </label>
+                    <div class="input-group">
+                      <input
+                        type="tel"
+                        class="form-control bg-dark text-light"
+                        id="telefoonnr"
+                        name="telefoonnr"
+                        placeholder="GEEF HIER JE NUMMER..."
+                      />
+                    </div>
+                  </article>
+                  <article class="field col-12">
+                    <label for="message" class="form-label"> </label>
+                    <textarea
+                      class="form-control bg-dark text-light"
+                      id="bericht"
+                      name="bericht"
+                      rows="6"
+                      placeholder="GEEF HIER JE BERICHT IN..."
+                      required
+                    ></textarea>
+                  </article>
+                  <article class="col-12">
+                    <div class="">
+                      <button
+                        class="btn mt-3 btn-dark btn-md button-contact"
+                        type="submit"
+                      >
+                        SUBMIT
+                      </button>
+                    </div>
+                  </article>
+                </section>
+              </form>
+            </article>
+          </section>
+
+          <aside class="informatie text-center d-flex col-lg-4">
+            <ul class="mt-3">
+              <li class="d-flex">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-mortarboard-fill mt-1"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917z"
+                  />
+                  <path
+                    d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466z"
+                  />
+                </svg>
+                <p class="d-flex ml-3">Artesis Plantijn Hogeschool</p>
+              </li>
+              <li class="d-flex">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-geo-alt-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
+                  />
+                </svg>
+                <p class="d-flex ml-3">Ellermanstraat 33, 2060 Antwerpen</p>
+              </li>
+              <a href="assets/cv/Curriculum_Vitae_-_Gilles_De_Bie .docx" download=""
+                ><button class="cv-button btn btn-dark btn-md mt-2">
+                  CURRICULUM VITAE
+                </button></a
+              >
+            </ul>
+          </aside>
         </section>
       </section>
     </main>

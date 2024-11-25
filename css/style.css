@@ -4,11 +4,11 @@
   --text-color: rgb(16.08% 19.61% 25.49%);
   --shadow: 6px 6px 6px 1px rgba(0, 0, 0, 0.75);
 }
-
 body {
   background-color: var(--main-color);
 }
 
+/* NAV */
 .active {
   background-color: rgb(13, 110, 253, 1) !important;
 }
@@ -20,7 +20,6 @@ body {
 .navbar {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  background-color: var(--main-color);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -29,7 +28,6 @@ body {
 }
 
 .navbar-nav .nav-knop:hover {
-  color: rgb(13, 110, 253, 1) !important;
   transform: scale(1.05);
   border: 0.5px solid rgb(13, 110, 253, 1);
   box-shadow: 0 0 2px rgb(13, 110, 253, 1), 0 0 2px rgb(13, 110, 253, 1),
@@ -47,16 +45,15 @@ body {
 
 .index-main h1 {
   font-family: Roboto-bold;
-  font-weight:600;
+  font-weight: 600;
   letter-spacing: 2px;
   text-decoration: underline;
   color: rgb(13, 110, 253, 1);
 }
-
 aside {
-  background-color: var(--secondary-color);
+  font-family: Roboto-bold;
+  font-weight: 900;
 }
-
 aside p {
   text-align: start;
   font-size: larger;
@@ -95,12 +92,19 @@ aside .profile-img {
 }
 /* PROJECTS */
 .card {
-  background-color: var(--secondary-color);
+  background-color: var(--main-color);
   transition: transform 0.3s ease-in-out;
+  box-shadow: 0 0 2px white;
+  font-family: Roboto-bold, sans-serif;
+  font-weight: 900;
+  width: 100%;
+  height: 350px;
 }
 
 .card:hover {
   transform: scale(1.05);
+  box-shadow: 0 0 2px rgb(13, 110, 253, 1), 0 0 2px rgb(13, 110, 253, 1),
+    0 0 2px rgb(13, 110, 253, 1);
 }
 
 .card:active {
@@ -142,30 +146,47 @@ aside .profile-img {
 
 /* CONTACT */
 
-h2 {
-  font-family: Roboto-bold;
+h1 {
+  font-family: Roboto-bold, sans-serif;
   font-weight: 900;
+  font-size: 2rem;
 }
 .form-control {
   border: none;
   border-radius: 20px;
-  font-family: Roboto-bold;
+  font-family: Roboto-bold, sans-serif;
   font-weight: 600;
 }
 
 .button-contact {
   border-radius: 20px;
-  font-family: Roboto-bold;
+  font-family: Roboto-bold, sans-serif;
   font-weight: 600;
 }
 
 .button-contact:hover {
-  scale: 1.05;
   border: 2px solid rgb(13, 110, 253, 1);
+  scale: 1.05;
 }
 
 .button-contact :active {
   scale: 0.9;
+}
+
+.cv-button {
+  border-radius: 20px;
+  font-weight: 900;
+
+}
+
+.cv-button:hover {
+  border: 2px solid rgb(13, 110, 253, 1);
+  font-family: Roboto-bold, sans-serif;
+}
+.informatie {
+  font-family: Roboto-black, sans-serif;
+  font-size: small;
+  border-radius: 20px;
 }
 
 @media (max-width: 576px) {
