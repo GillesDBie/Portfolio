@@ -1,5 +1,5 @@
 :root {
-  --main-color: rgb(34, 40, 49);
+  --main-color: rgb(19, 19, 20);
   --secondary-color: rgb(49, 54, 63);
   --text-color: rgb(16.08% 19.61% 25.49%);
   --shadow: 6px 6px 6px 1px rgba(0, 0, 0, 0.75);
@@ -39,25 +39,6 @@ body {
   transform: scale(1);
 }
 /* INDEX */
-.index-main {
-  background-color: var(--secondary-color);
-}
-
-.index-main h1 {
-  font-family: Roboto-bold;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-decoration: underline;
-  color: rgb(13, 110, 253, 1);
-}
-aside {
-  font-family: Roboto-bold;
-  font-weight: 900;
-}
-aside p {
-  text-align: start;
-  font-size: larger;
-}
 
 aside .profile-img {
   background-color: transparent;
@@ -90,21 +71,20 @@ aside .profile-img {
   color: white;
   text-decoration: none;
 }
-/* PROJECTS */
+/* PORTFOLIO */
 .card {
   background-color: var(--main-color);
   transition: transform 0.3s ease-in-out;
-  box-shadow: 0 0 2px white;
   font-family: Roboto-bold, sans-serif;
   font-weight: 900;
   width: 100%;
   height: 350px;
 }
-
 .card:hover {
   transform: scale(1.05);
   box-shadow: 0 0 2px rgb(13, 110, 253, 1), 0 0 2px rgb(13, 110, 253, 1),
     0 0 2px rgb(13, 110, 253, 1);
+  border: none !important;
 }
 
 .card:active {
@@ -161,7 +141,7 @@ h1 {
 .button-contact {
   border-radius: 20px;
   font-family: Roboto-bold, sans-serif;
-  font-weight: 600;
+  font-weight: 900;
 }
 
 .button-contact:hover {
@@ -172,21 +152,20 @@ h1 {
 .button-contact :active {
   scale: 0.9;
 }
+.informatie {
+  font-family: Roboto-black, sans-serif;
+  font-weight: bold;
+  font-size: small;
+  border-radius: 20px;
+}
 
 .cv-button {
   border-radius: 20px;
   font-weight: 900;
-
 }
-
 .cv-button:hover {
   border: 2px solid rgb(13, 110, 253, 1);
   font-family: Roboto-bold, sans-serif;
-}
-.informatie {
-  font-family: Roboto-black, sans-serif;
-  font-size: small;
-  border-radius: 20px;
 }
 
 @media (max-width: 576px) {
