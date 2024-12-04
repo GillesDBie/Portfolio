@@ -168,6 +168,11 @@ h1 {
   font-family: Roboto-bold, sans-serif;
 }
 
+#map {
+  width: 400px;
+  height: 180px;
+}
+
 @media (max-width: 576px) {
   .button-contact {
     display: flex;
