@@ -9,11 +9,11 @@ body {
 
 /* NAV */
 .active {
-  background-color: rgb(13, 110, 253, 1) !important;
+  background-color: var(--secondary-color);
 }
 
 .background-main {
-  background-color: var(--main-color) !important;
+  background-color: var(--main-color);
 }
 
 .navbar {
@@ -28,9 +28,9 @@ body {
 
 .navbar-nav .nav-knop:hover {
   transform: scale(1.05);
-  border: 0.5px solid rgb(13, 110, 253, 1);
-  box-shadow: 0 0 2px rgb(13, 110, 253, 1), 0 0 2px rgb(13, 110, 253, 1),
-    0 0 2px rgb(13, 110, 253, 1);
+  border: 0.5px solid var(--secondary-color);
+  box-shadow: 0 0 2px var(--secondary-color), 0 0 2px var(--secondary-color),
+    0 0 2px var(--secondary-color);
   transition: all 0.3s ease;
 }
 
@@ -45,9 +45,6 @@ aside .profile-img {
   width: 50%;
 }
 
-
-
-
 /* ABOUT */
 
 .title-about {
@@ -55,7 +52,6 @@ aside .profile-img {
   font-weight: 900;
   font-size: 1.7rem;
   border-bottom: 1px solid white;
-
 }
 .links-row {
   display: flex;
@@ -63,14 +59,12 @@ aside .profile-img {
 }
 
 .icon :hover {
-  color: rgb(13, 110, 253, 1) !important;
-  ;
+  color: var(--secondary-color);
 }
 
-.icon :hover{
-  color: rgb(13, 110, 253, 1) !important;
+.icon :hover {
+  color: var(--secondary-color);
 }
-
 
 .links-about p {
   font-family: Roboto-black, sans-serif;
@@ -80,13 +74,12 @@ aside .profile-img {
 .skill-card h3 {
   font-family: Roboto-bold, sans-serif;
   font-size: medium;
-  font-weight: 600  ;
+  font-weight: 600;
 }
 .skill-card .progress-bar {
   font-family: Roboto-bold, sans-serif;
   font-weight: 600;
 }
-
 
 /* PORTFOLIO */
 .card {
@@ -99,8 +92,8 @@ aside .profile-img {
 }
 .card:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 2px rgb(13, 110, 253, 1), 0 0 2px rgb(13, 110, 253, 1),
-    0 0 2px rgb(13, 110, 253, 1);
+  box-shadow: 0 0 2px var(--secondary-color), 0 0 2px var(--secondary-color),
+    0 0 2px var(--secondary-color);
   border: none !important;
 }
 
@@ -109,8 +102,8 @@ aside .profile-img {
 }
 
 .card img {
-  width: 100%;
-  height: auto;
+  width: 1000px;
+  height: 200px;
   border-radius: 10px;
 }
 
@@ -133,7 +126,7 @@ aside .profile-img {
   width: 300px;
   height: 300px;
 }
-.carousel-button{
+.carousel-button {
   font-family: Roboto-bold, sans-serif;
   background-color: transparent;
 }
@@ -141,12 +134,12 @@ aside .profile-img {
 .arrow-icon {
   transition: transform 0.3s ease-in-out;
 }
-.arrow-icon:hover{
+.arrow-icon:hover {
   color: var(--secondary-color);
   transform: scale(1.1);
 }
 
-.arrow-icon:active{
+.arrow-icon:active {
   text-decoration: none;
   border: none;
 }
@@ -168,11 +161,14 @@ h2 {
   border-radius: 20px;
   font-family: Roboto-bold, sans-serif;
   font-weight: 900;
+  background-color: var(--main-color);
+  box-shadow: 0 0 2px var(--secondary-color), 0 0 2px var(--secondary-color),
+  0 0 2px var(--secondary-color);
 }
 
 .button-contact:hover {
-  background-color: rgb(13, 110, 253, 1);
   scale: 1.05;
+
 }
 
 .button-contact :active {
@@ -190,7 +186,7 @@ h2 {
   font-weight: 900;
 }
 .cv-button:hover {
-  border: 2px solid rgb(13, 110, 253, 1);
+  border: 2px solid var(--secondary-color);
   font-family: Roboto-bold, sans-serif;
 }
 
@@ -199,13 +195,9 @@ h2 {
   height: 180px;
 }
 
-@media (max-width: 576px) {
-  .button-contact {
-    display: flex;
-    justify-content: center;
-  }
-  article h1 {
-    font-size: 2rem !important;
+@media (max-width: 321px) {
+  .navbar {
+    font-size: small;
   }
 }
 
@@ -215,8 +207,18 @@ h2 {
   }
 }
 
-@media (max-width: 321px) {
-  .navbar {
-    font-size: small;
+@media (max-width: 470px) {
+  #map {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .button-contact {
+    display: flex;
+    justify-content: center;
+  }
+  article h1 {
+    font-size: 2rem !important;
   }
 }
