@@ -1,7 +1,6 @@
 :root {
-  --main-color: rgb(19, 19, 20);
-  --secondary-color: rgb(49, 54, 63);
-  --text-color: rgb(16.08% 19.61% 25.49%);
+  --main-color: rgb(21, 34, 56);
+  --secondary-color: rgb(13, 110, 253, 1);
   --shadow: 6px 6px 6px 1px rgba(0, 0, 0, 0.75);
 }
 body {
@@ -46,31 +45,49 @@ aside .profile-img {
   width: 50%;
 }
 
-.github-icon {
-  color: white;
+
+
+
+/* ABOUT */
+
+.title-about {
+  font-family: Roboto-bold, sans-serif;
+  font-weight: 900;
+  font-size: 1.7rem;
+  border-bottom: 1px solid white;
+
+}
+.links-row {
+  display: flex;
+  gap: 10px;
 }
 
-.github-icon:hover {
-  color: white;
-  text-decoration: none;
+.icon :hover {
+  color: rgb(13, 110, 253, 1) !important;
+  ;
 }
 
-.linkedin-icon {
-  color: white;
+.icon :hover{
+  color: rgb(13, 110, 253, 1) !important;
 }
 
-.linkedin-icon:hover {
-  color: white;
-  text-decoration: none;
+
+.links-about p {
+  font-family: Roboto-black, sans-serif;
+  font-size: medium;
+  font-weight: 400;
 }
-.gmail-icon {
-  color: white;
+.skill-card h3 {
+  font-family: Roboto-bold, sans-serif;
+  font-size: medium;
+  font-weight: 600  ;
+}
+.skill-card .progress-bar {
+  font-family: Roboto-bold, sans-serif;
+  font-weight: 600;
 }
 
-.gmail-icon:hover {
-  color: white;
-  text-decoration: none;
-}
+
 /* PORTFOLIO */
 .card {
   background-color: var(--main-color);
@@ -107,26 +124,35 @@ aside .profile-img {
 }
 
 /* PROJECT DETAIL PAGE */
-.project-container {
-  background-color: var(--main-color);
-  color: var(--text-color);
+.project-text {
+  font-family: Roboto-bold, sans-serif;
+  font-weight: 300;
 }
 
-.project-top {
-  background-color: var(--secondary-color);
+.carousel-image {
+  width: 300px;
+  height: 300px;
+}
+.carousel-button{
+  font-family: Roboto-bold, sans-serif;
+  background-color: transparent;
 }
 
-.project-body {
-  background-color: var(--secondary-color);
+.arrow-icon {
+  transition: transform 0.3s ease-in-out;
+}
+.arrow-icon:hover{
+  color: var(--secondary-color);
+  transform: scale(1.1);
 }
 
-.project-details-text {
-  color: var(--text-color);
+.arrow-icon:active{
+  text-decoration: none;
+  border: none;
 }
-
 /* CONTACT */
 
-h1 {
+h2 {
   font-family: Roboto-bold, sans-serif;
   font-weight: 900;
   font-size: 2rem;
@@ -145,7 +171,7 @@ h1 {
 }
 
 .button-contact:hover {
-  border: 2px solid rgb(13, 110, 253, 1);
+  background-color: rgb(13, 110, 253, 1);
   scale: 1.05;
 }
 
@@ -177,6 +203,9 @@ h1 {
   .button-contact {
     display: flex;
     justify-content: center;
+  }
+  article h1 {
+    font-size: 2rem !important;
   }
 }
 
