@@ -4,13 +4,11 @@
 }
 body {
   background-color: var(--main-color);
-  
 }
 
 .logo-proj:hover {
   box-shadow: 0 0 2px var(--secondary-color), 0 0 2px var(--secondary-color),
-  0 0 2px var(--secondary-color);
-
+    0 0 2px var(--secondary-color);
 }
 /* NAV */
 .active {
@@ -63,6 +61,20 @@ aside .profile-img {
   gap: 10px;
 }
 
+.links-knop {
+  transition: transform 0.3s ease-in-out;
+}
+
+.links-knop:hover {
+  display: flex;
+  border-radius: 100%;
+  box-shadow: 0 0 2px var(--secondary-color), 0 0 2px var(--secondary-color),
+    0 0 2px var(--secondary-color);
+  transform: scale(1.1);
+}
+  
+
+
 .icon :hover {
   color: var(--secondary-color);
 }
@@ -85,12 +97,11 @@ aside .profile-img {
 .progress {
   background-color: var(--main-color);
   box-shadow: 0 0 2px var(--secondary-color), 0 0 2px var(--secondary-color),
-  0 0 2px var(--secondary-color);
+    0 0 2px var(--secondary-color);
 }
 .skill-card .progress-bar {
   font-family: Roboto-bold, sans-serif;
   font-weight: 600;
-  
 }
 
 /* PORTFOLIO */
@@ -169,10 +180,10 @@ h2 {
   font-family: Roboto-bold, sans-serif;
   font-weight: 600;
   box-shadow: 0 0 2px var(--secondary-color), 0 0 2px var(--secondary-color),
-  0 0 2px var(--secondary-color);
+    0 0 2px var(--secondary-color);
 }
 
-.form-control:focus{
+.form-control:focus {
   background-color: var(--main-color);
 }
 .button-contact {
@@ -181,12 +192,11 @@ h2 {
   font-weight: 900;
   background-color: var(--main-color);
   box-shadow: 0 0 2px var(--secondary-color), 0 0 2px var(--secondary-color),
-  0 0 2px var(--secondary-color);
+    0 0 2px var(--secondary-color);
 }
 
 .button-contact:hover {
   scale: 1.05;
-
 }
 
 .button-contact :active {
