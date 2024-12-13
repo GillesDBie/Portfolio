@@ -1,12 +1,17 @@
 :root {
   --main-color: rgb(21, 34, 56);
   --secondary-color: rgb(13, 110, 253, 1);
-  --shadow: 6px 6px 6px 1px rgba(0, 0, 0, 0.75);
 }
 body {
   background-color: var(--main-color);
+  
 }
 
+.logo-proj:hover {
+  box-shadow: 0 0 2px var(--secondary-color), 0 0 2px var(--secondary-color),
+  0 0 2px var(--secondary-color);
+
+}
 /* NAV */
 .active {
   background-color: var(--secondary-color);
@@ -76,9 +81,16 @@ aside .profile-img {
   font-size: medium;
   font-weight: 600;
 }
+
+.progress {
+  background-color: var(--main-color);
+  box-shadow: 0 0 2px var(--secondary-color), 0 0 2px var(--secondary-color),
+  0 0 2px var(--secondary-color);
+}
 .skill-card .progress-bar {
   font-family: Roboto-bold, sans-serif;
   font-weight: 600;
+  
 }
 
 /* PORTFOLIO */
@@ -151,12 +163,18 @@ h2 {
   font-size: 2rem;
 }
 .form-control {
+  background-color: var(--main-color);
   border: none;
   border-radius: 20px;
   font-family: Roboto-bold, sans-serif;
   font-weight: 600;
+  box-shadow: 0 0 2px var(--secondary-color), 0 0 2px var(--secondary-color),
+  0 0 2px var(--secondary-color);
 }
 
+.form-control:focus{
+  background-color: var(--main-color);
+}
 .button-contact {
   border-radius: 20px;
   font-family: Roboto-bold, sans-serif;
@@ -204,6 +222,12 @@ h2 {
 @media (max-width: 380px) {
   .navbar .logo-proj {
     width: 75px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar .logo-proj {
+    display: none;
   }
 }
 
