@@ -144,9 +144,14 @@
         <section class="container text-light d-flex flex-lg-row flex-column">
           <section class="row">
             <article class="col-12 col-lg-9">
-              <form 
-              name="contact" method="POST" data-netlify="true" onsubmit="submit"
-              class="contact-form" action="">
+              <form
+                name="contact"
+                method="POST"
+                data-netlify="true"
+                onsubmit="submit"
+                class="contact-form"
+                action=""
+              >
                 <section class="row">
                   <article class="field col-12">
                     <label for="naam" class="form-label"> </label>
@@ -195,27 +200,55 @@
                       required
                     ></textarea>
                   </article>
-                  <article class="col-12">
-                    <div class="">
+                </section>
+                <section class="row">
+                  <article class="col-6">
+                    <button
+                      class="btn mt-3 btn btn-md button-contact text-light"
+                      type="submit"
+                    >
+                      VERZENDEN
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-send"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"
+                        />
+                      </svg>
+                    </button>
+                  </article>
+                  <article class="col-6">
+                    <a
+                      href="assets/cv/Curriculum_Vitae_-_Gilles_De_Bie .docx"
+                      download=""
+                    >
                       <button
                         class="btn mt-3 btn btn-md button-contact text-light"
-                        type="submit"
+                        type=""
                       >
-                        VERZENDEN
+                        CURRICULUM VITAE
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-send"
+                          class="bi bi-download"
                           viewBox="0 0 16 16"
                         >
                           <path
-                            d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"
+                            d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"
+                          />
+                          <path
+                            d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"
                           />
                         </svg>
                       </button>
-                    </div>
+                    </a>
                   </article>
                 </section>
               </form>
@@ -274,27 +307,6 @@
                 <p class="d-flex ml-4 mt-1">+32 483 115 508</p>
               </li>
               <div id="map" class="leafletmap mt-3 rounded"></div>
-              <a
-                href="assets/cv/Curriculum_Vitae_-_Gilles_De_Bie .docx"
-                download=""
-                ><button class="button-contact btn text-light btn-md mt-3">
-                  CURRICULUM VITAE
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-download"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"
-                    />
-                    <path
-                      d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"
-                    />
-                  </svg></button
-              ></a>
             </ul>
           </aside>
         </section>

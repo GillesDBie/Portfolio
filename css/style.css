@@ -29,6 +29,7 @@ body {
   border-radius: 100%;
 }
 
+
 .navbar-nav .nav-knop:hover {
   transform: scale(1.05);
   border: 0.5px solid var(--secondary-color);
@@ -62,15 +63,14 @@ aside .profile-img {
 }
 
 .links-knop {
-  transition: transform 0.3s ease-in-out;
+  border-radius: 100%;
 }
 
 .links-knop:hover {
   display: flex;
-  border-radius: 100%;
   box-shadow: 0 0 2px var(--secondary-color), 0 0 2px var(--secondary-color),
     0 0 2px var(--secondary-color);
-  transform: scale(1.1);
+
 }
   
 
