@@ -312,6 +312,27 @@
         </section>
       </section>
     </main>
+    <footer class="footer text-white text-center py-3 mt-4 border-top">
+      <div class="container">
+        <p class="mb-0">&copy; <span id="current-year"></span> Gilles De Bie</p>
+        <p class="mb-0">
+          <a
+            href="https://github.com/GillesDBie"
+            class="text-white me-3"
+            target="_blank"
+          >
+            <i class="bi bi-github"></i> GitHub
+          </a>
+          <a href="#" class="text-white" target="_blank">
+            <i class="bi bi-linkedin"></i> LinkedIn
+          </a>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
 <script src="js/leaflet.js"></script>
+<script>
+  document.getElementById("current-year").textContent =
+    new Date().getFullYear();
+</script>
