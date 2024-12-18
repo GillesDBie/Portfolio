@@ -119,3 +119,7 @@ meter {
 ::-webkit-details-marker {
   display: none;
 }
+
+*:active {
+ border: none; 
+}
